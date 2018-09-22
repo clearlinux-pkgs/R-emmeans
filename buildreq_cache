@@ -1,8 +1,9 @@
-1.2.3
-R-xtable
-R-estimability
+1.2.4
 R-coda
-R-plyr
+R-estimability
 R-ggplot2
-R-mvtnorm
+R-labeling
 R-markdown
+R-mvtnorm
+R-plyr
+R-xtable
