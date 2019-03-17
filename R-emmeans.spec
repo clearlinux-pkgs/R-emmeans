@@ -4,22 +4,21 @@
 #
 Name     : R-emmeans
 Version  : 1.3.3
-Release  : 13
+Release  : 14
 URL      : https://cran.r-project.org/src/contrib/emmeans_1.3.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/emmeans_1.3.3.tar.gz
 Summary  : Estimated Marginal Means, aka Least-Squares Means
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
-Requires: R-coda
-Requires: R-estimability
-Requires: R-ggplot2
-Requires: R-mvtnorm
-Requires: R-numDeriv
-Requires: R-plyr
-Requires: R-xtable
+Requires: R-Rcpp
+Requires: R-lme4
+BuildRequires : R-Rcpp
 BuildRequires : R-coda
 BuildRequires : R-estimability
 BuildRequires : R-ggplot2
+BuildRequires : R-labeling
+BuildRequires : R-lme4
+BuildRequires : R-markdown
 BuildRequires : R-mvtnorm
 BuildRequires : R-numDeriv
 BuildRequires : R-plyr
@@ -39,10 +38,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1551584334
+export SOURCE_DATE_EPOCH=1552840393
 
 %install
-export SOURCE_DATE_EPOCH=1551584334
+export SOURCE_DATE_EPOCH=1552840393
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -78,8 +77,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library emmeans|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  emmeans || :
 
 
 %files
