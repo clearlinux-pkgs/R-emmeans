@@ -1,4 +1,4 @@
-1.3.3
+1.3.4
 R-Rcpp
 R-coda
 R-estimability
@@ -6,6 +6,7 @@ R-ggplot2
 R-labeling
 R-lme4
 R-markdown
+R-multcomp
 R-mvtnorm
 R-numDeriv
 R-plyr
