@@ -1,13 +1,9 @@
-1.3.4
-R-Rcpp
+1.3.5.1
+R-car
 R-coda
-R-estimability
+R-evaluate
 R-ggplot2
-R-labeling
 R-lme4
 R-markdown
 R-multcomp
-R-mvtnorm
-R-numDeriv
-R-plyr
-R-xtable
+R-nloptr
