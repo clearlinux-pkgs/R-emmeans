@@ -4,17 +4,13 @@
 #
 Name     : R-emmeans
 Version  : 1.4.1
-Release  : 25
+Release  : 26
 URL      : https://cran.r-project.org/src/contrib/emmeans_1.4.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/emmeans_1.4.1.tar.gz
 Summary  : Estimated Marginal Means, aka Least-Squares Means
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
-Requires: R-car
-Requires: R-coda
 Requires: R-estimability
-Requires: R-lme4
-Requires: R-multcomp
 Requires: R-mvtnorm
 Requires: R-numDeriv
 Requires: R-plyr
@@ -22,13 +18,18 @@ Requires: R-xtable
 BuildRequires : R-car
 BuildRequires : R-coda
 BuildRequires : R-estimability
+BuildRequires : R-evaluate
+BuildRequires : R-ggplot2
 BuildRequires : R-lme4
+BuildRequires : R-markdown
 BuildRequires : R-multcomp
 BuildRequires : R-mvtnorm
+BuildRequires : R-nloptr
 BuildRequires : R-numDeriv
 BuildRequires : R-plyr
 BuildRequires : R-xtable
 BuildRequires : buildreq-R
+BuildRequires : util-linux
 
 %description
 R package **emmeans**: Estimated marginal means
@@ -43,10 +44,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1568322208
+export SOURCE_DATE_EPOCH=1571823570
 
 %install
-export SOURCE_DATE_EPOCH=1568322208
+export SOURCE_DATE_EPOCH=1571823570
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
