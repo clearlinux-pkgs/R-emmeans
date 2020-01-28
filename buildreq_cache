@@ -1,10 +1,5 @@
-1.4.3.01
+1.4.4
 R-car
 R-coda
-R-evaluate
-R-ggplot2
 R-lme4
-R-markdown
 R-multcomp
-R-nloptr
-util-linux
