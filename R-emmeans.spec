@@ -4,26 +4,22 @@
 #
 Name     : R-emmeans
 Version  : 1.4.6
-Release  : 34
+Release  : 35
 URL      : https://cran.r-project.org/src/contrib/emmeans_1.4.6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/emmeans_1.4.6.tar.gz
 Summary  : Estimated Marginal Means, aka Least-Squares Means
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
 Requires: R-car
-Requires: R-coda
 Requires: R-estimability
 Requires: R-lme4
-Requires: R-multcomp
 Requires: R-mvtnorm
 Requires: R-numDeriv
 Requires: R-plyr
 Requires: R-xtable
 BuildRequires : R-car
-BuildRequires : R-coda
 BuildRequires : R-estimability
 BuildRequires : R-lme4
-BuildRequires : R-multcomp
 BuildRequires : R-mvtnorm
 BuildRequires : R-numDeriv
 BuildRequires : R-plyr
@@ -31,27 +27,29 @@ BuildRequires : R-xtable
 BuildRequires : buildreq-R
 
 %description
-R package **emmeans**: Estimated marginal means
-====
-##### *Note: **emmeans** is a continuation of the package **lsmeans**. The latter will eventually be retired.*
+linear, and mixed models. Compute contrasts or linear functions of EMMs,
+  trends, and comparisons of slopes. Plots and other displays.
+  Least-squares means are discussed, and the term "estimated marginal means"
+  is suggested, in Searle, Speed, and Milliken (1980) Population marginal means
 
 %prep
 %setup -q -c -n emmeans
+cd %{_builddir}/emmeans
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1587403310
+export SOURCE_DATE_EPOCH=1589774459
 
 %install
-export SOURCE_DATE_EPOCH=1587403310
+export SOURCE_DATE_EPOCH=1589774459
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
