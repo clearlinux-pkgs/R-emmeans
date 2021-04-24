@@ -4,7 +4,7 @@
 #
 Name     : R-emmeans
 Version  : 1.5.5.1
-Release  : 46
+Release  : 47
 URL      : https://cran.r-project.org/src/contrib/emmeans_1.5.5-1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/emmeans_1.5.5-1.tar.gz
 Summary  : Estimated Marginal Means, aka Least-Squares Means
