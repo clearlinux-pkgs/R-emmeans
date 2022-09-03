@@ -35,10 +35,17 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
+<<<<<<< Updated upstream
 export SOURCE_DATE_EPOCH=1659984930
 
 %install
 export SOURCE_DATE_EPOCH=1659984930
+=======
+export SOURCE_DATE_EPOCH=1659972827
+
+%install
+export SOURCE_DATE_EPOCH=1659972827
+>>>>>>> Stashed changes
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -79,80 +86,3 @@ R CMD check --no-manual --no-examples --no-codoc . || :
 
 %files
 %defattr(-,root,root,-)
-/usr/lib64/R/library/emmeans/DESCRIPTION
-/usr/lib64/R/library/emmeans/INDEX
-/usr/lib64/R/library/emmeans/Meta/Rd.rds
-/usr/lib64/R/library/emmeans/Meta/data.rds
-/usr/lib64/R/library/emmeans/Meta/features.rds
-/usr/lib64/R/library/emmeans/Meta/hsearch.rds
-/usr/lib64/R/library/emmeans/Meta/links.rds
-/usr/lib64/R/library/emmeans/Meta/nsInfo.rds
-/usr/lib64/R/library/emmeans/Meta/package.rds
-/usr/lib64/R/library/emmeans/Meta/vignette.rds
-/usr/lib64/R/library/emmeans/NAMESPACE
-/usr/lib64/R/library/emmeans/NEWS.md
-/usr/lib64/R/library/emmeans/R/emmeans
-/usr/lib64/R/library/emmeans/R/emmeans.rdb
-/usr/lib64/R/library/emmeans/R/emmeans.rdx
-/usr/lib64/R/library/emmeans/css/clean-simple.css
-/usr/lib64/R/library/emmeans/data/Rdata.rdb
-/usr/lib64/R/library/emmeans/data/Rdata.rds
-/usr/lib64/R/library/emmeans/data/Rdata.rdx
-/usr/lib64/R/library/emmeans/doc/FAQs.R
-/usr/lib64/R/library/emmeans/doc/FAQs.Rmd
-/usr/lib64/R/library/emmeans/doc/FAQs.html
-/usr/lib64/R/library/emmeans/doc/basics.R
-/usr/lib64/R/library/emmeans/doc/basics.Rmd
-/usr/lib64/R/library/emmeans/doc/basics.html
-/usr/lib64/R/library/emmeans/doc/comparisons.R
-/usr/lib64/R/library/emmeans/doc/comparisons.Rmd
-/usr/lib64/R/library/emmeans/doc/comparisons.html
-/usr/lib64/R/library/emmeans/doc/confidence-intervals.R
-/usr/lib64/R/library/emmeans/doc/confidence-intervals.Rmd
-/usr/lib64/R/library/emmeans/doc/confidence-intervals.html
-/usr/lib64/R/library/emmeans/doc/index.html
-/usr/lib64/R/library/emmeans/doc/interactions.R
-/usr/lib64/R/library/emmeans/doc/interactions.Rmd
-/usr/lib64/R/library/emmeans/doc/interactions.html
-/usr/lib64/R/library/emmeans/doc/messy-data.R
-/usr/lib64/R/library/emmeans/doc/messy-data.Rmd
-/usr/lib64/R/library/emmeans/doc/messy-data.html
-/usr/lib64/R/library/emmeans/doc/models.Rmd
-/usr/lib64/R/library/emmeans/doc/models.html
-/usr/lib64/R/library/emmeans/doc/predictions.R
-/usr/lib64/R/library/emmeans/doc/predictions.Rmd
-/usr/lib64/R/library/emmeans/doc/predictions.html
-/usr/lib64/R/library/emmeans/doc/sophisticated.R
-/usr/lib64/R/library/emmeans/doc/sophisticated.Rmd
-/usr/lib64/R/library/emmeans/doc/sophisticated.html
-/usr/lib64/R/library/emmeans/doc/transformations.R
-/usr/lib64/R/library/emmeans/doc/transformations.Rmd
-/usr/lib64/R/library/emmeans/doc/transformations.html
-/usr/lib64/R/library/emmeans/doc/utilities.R
-/usr/lib64/R/library/emmeans/doc/utilities.Rmd
-/usr/lib64/R/library/emmeans/doc/utilities.html
-/usr/lib64/R/library/emmeans/doc/vignette-topics.Rmd
-/usr/lib64/R/library/emmeans/doc/vignette-topics.html
-/usr/lib64/R/library/emmeans/doc/xplanations.R
-/usr/lib64/R/library/emmeans/doc/xplanations.Rmd
-/usr/lib64/R/library/emmeans/doc/xplanations.html
-/usr/lib64/R/library/emmeans/doc/xtending.R
-/usr/lib64/R/library/emmeans/doc/xtending.Rmd
-/usr/lib64/R/library/emmeans/doc/xtending.html
-/usr/lib64/R/library/emmeans/extdata/cbpplist
-/usr/lib64/R/library/emmeans/extdata/cbpppriorrglist
-/usr/lib64/R/library/emmeans/extdata/cbpprglist
-/usr/lib64/R/library/emmeans/extdata/cbppsigma
-/usr/lib64/R/library/emmeans/help/AnIndex
-/usr/lib64/R/library/emmeans/help/aliases.rds
-/usr/lib64/R/library/emmeans/help/emmeans.rdb
-/usr/lib64/R/library/emmeans/help/emmeans.rdx
-/usr/lib64/R/library/emmeans/help/paths.rds
-/usr/lib64/R/library/emmeans/html/00Index.html
-/usr/lib64/R/library/emmeans/html/R.css
-/usr/lib64/R/library/emmeans/tests/testthat.R
-/usr/lib64/R/library/emmeans/tests/testthat/test-contrast.R
-/usr/lib64/R/library/emmeans/tests/testthat/test-emmeans.R
-/usr/lib64/R/library/emmeans/tests/testthat/test-emtrends.R
-/usr/lib64/R/library/emmeans/tests/testthat/test-nested.R
-/usr/lib64/R/library/emmeans/tests/testthat/test-ref_grid.R
