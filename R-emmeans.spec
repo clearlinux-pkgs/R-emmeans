@@ -4,7 +4,7 @@
 #
 Name     : R-emmeans
 Version  : 1.8.5
-Release  : 7
+Release  : 8
 URL      : https://cran.r-project.org/src/contrib/emmeans_1.8.5.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/emmeans_1.8.5.tar.gz
 Summary  : Estimated Marginal Means, aka Least-Squares Means
@@ -17,9 +17,6 @@ BuildRequires : R-estimability
 BuildRequires : R-mvtnorm
 BuildRequires : R-numDeriv
 BuildRequires : buildreq-R
-# Suppress stripping binaries
-%define __strip /bin/true
-%define debug_package %{nil}
 
 %description
 linear, and mixed models. Compute contrasts or linear functions of EMMs,
@@ -36,10 +33,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1678469293
+export SOURCE_DATE_EPOCH=1678817372
 
 %install
-export SOURCE_DATE_EPOCH=1678469293
+export SOURCE_DATE_EPOCH=1678817372
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
