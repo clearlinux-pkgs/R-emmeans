@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-emmeans
-Version  : 1.8.7
-Release  : 13
-URL      : https://cran.r-project.org/src/contrib/emmeans_1.8.7.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/emmeans_1.8.7.tar.gz
+Version  : 1.8.8
+Release  : 14
+URL      : https://cran.r-project.org/src/contrib/emmeans_1.8.8.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/emmeans_1.8.8.tar.gz
 Summary  : Estimated Marginal Means, aka Least-Squares Means
 Group    : Development/Tools
 License  : GPL-2.0 GPL-3.0
@@ -36,10 +36,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1687799047
+export SOURCE_DATE_EPOCH=1692306316
 
 %install
-export SOURCE_DATE_EPOCH=1687799047
+export SOURCE_DATE_EPOCH=1692306316
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
