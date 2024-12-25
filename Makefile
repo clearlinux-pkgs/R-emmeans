@@ -1,5 +1,5 @@
 PKG_NAME := R-emmeans
-URL = https://cran.r-project.org/src/contrib/emmeans_1.10.5.tar.gz
+URL = https://ftp.osuosl.org/pub/cran/src/contrib/emmeans_1.10.6.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
